@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+      <Link to="/" className="link">
         home
       </Link>
       <Link to="cart" style={{ color: "black" }}>
@@ -60,7 +60,7 @@ const Header = () => {
           </div>
         </div>
       ) : (
-        <Link to="login" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="login" className="link">
           login
         </Link>
       )}
