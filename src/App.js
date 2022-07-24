@@ -27,17 +27,11 @@ function App() {
         <Route path="sign" element={flaglogin ? <Already /> : <Sign_up />} />
         <Route path="login" element={flaglogin ? <Already /> : <Login />} />
         <Route path="product/:id" element={<Product />} />
-        <Route
-          path="changpass"
-          element={flaglogin ? <Changpass /> : <Login />}
-        />
+        <Route path="changpass" element={flaglogin ? <Changpass /> : <Login />} />
         <Route path="address" element={flaglogin ? <Address /> : <Login />} />
         <Route path="bill" element={flaglogin ? <Bill /> : <Login />} />
         <Route path="orders" element={flaglogin ? <Orders /> : <Login />} />
-        <Route
-          path="orders/:id"
-          element={flaglogin ? <Theorder /> : <Login />}
-        />
+        <Route path="orders/:id" element={flaglogin ? <Theorder /> : <Login />} />
         <Route path="done" element={<Done />} />
         <Route path="passchanged" element={<Changed />} />
         <Route path="*" element={<Redirect />} />
