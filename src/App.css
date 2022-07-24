@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tac {
+  text-align: center;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: #4caf50;
+  padding: 13px 0;
+  margin: 6px 1px 14px 1px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.homeproduct {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.homeproduct div {
+  border: 1px solid black;
+  margin: 0px 2px 5px 2px;
+  padding: 4px;
+  background-color: #b3cde0;
+  cursor: pointer;
+}
+.homeproduct p {
+  text-align: center;
+}
+.homeproduct div:hover {
+  background-color: #a5d6a7;
+}
+button {
+  cursor: pointer;
+}
+
+.headeremail::after {
+  content: "\25bc";
+  font-size: x-small;
+  left: 101%;
+  top: 33%;
+  position: absolute;
+}
+.headeremail:hover:after {
+  content: "\25b2";
+  font-size: x-small;
+  left: 101%;
+  top: 26%;
+  position: absolute;
+}
+.submenu {
+  display: none;
+}
+.headeremail:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  background-color: gray;
+}
+.submenu button {
+  margin-bottom: 1px;
+  border: 2px solid black;
+  padding: 3px;
+}
+.submenu button:hover {
+  transform: scale(1.04);
+}
+.num {
+  display: inline-block;
+  background-color: #f44336;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  line-height: initial;
+}
+.header a {
+  width: 47px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  transition: 0.25s;
+  padding: 1.5px;
+}
+.header a:hover {
+  background-color: #81c784;
+  border-radius: 3px;
+}
+.headeremail:hover {
+  background-color: #81c784;
+}
+.carttopbutton {
+  display: flex;
+  align-items: center;
+  margin: 14px 5px 14px 0px;
+  justify-content: flex-end;
+}
+.carttopbutton div button {
+  margin-right: 1px;
+}
+.cartitems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+  border-bottom: 1px solid black;
+  padding: 2px 0px;
+}
+.cartitems img {
+  width: 100px;
+  height: 100px;
+}
+.cartButtonKamziadkon {
+  display: flex;
+  align-items: center;
+}
