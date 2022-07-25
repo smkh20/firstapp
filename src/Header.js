@@ -31,13 +31,17 @@ const Header = () => {
 
   return (
     <div className="header">
-      <Link to="/" className="link">
-        home
-      </Link>
-      <Link to="cart" style={{ color: "black" }}>
-        <span className="material-icons-outlined">shopping_bag</span>
-         <div className="num">{totalqty}</div>
-      </Link>
+      <div>
+        <Link to="/" className="link">
+          home
+        </Link>
+      </div>
+      <div>
+        <Link to="cart" style={{ color: "black", position: "relative" }}>
+          <span className="material-icons-outlined">shopping_bag</span>
+          <span className="num">{totalqty}</span>
+        </Link>
+      </div>
       {flaglogin ? (
         <div
           className="headeremail"
@@ -60,9 +64,11 @@ const Header = () => {
           </div>
         </div>
       ) : (
-        <Link to="login" className="link">
-          login
-        </Link>
+        <div>
+          <Link to="login" className="link">
+            login
+          </Link>
+        </div>
       )}
     </div>
   );
