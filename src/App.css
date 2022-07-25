@@ -49,27 +49,28 @@
   color: black;
 }
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
+  display: flex;
+  justify-content: space-evenly;
   background-color: #4caf50;
   padding: 13px 0;
-  margin: 6px 1px 14px 1px;
+  margin: 6px 1px 14px;
   position: sticky;
   top: 0;
   z-index: 1;
+  max-width: 100%;
+  font-size: 18px;
 }
 .homeproduct {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
   justify-items: center;
+  max-width: 100%;
 }
 
 .homeproduct div {
   border: 1px solid black;
-  margin: 0px 2px 5px 2px;
-  padding: 4px;
+
+  max-width: 100%;
   background-color: #b3cde0;
   cursor: pointer;
 }
@@ -87,14 +88,14 @@ button {
   content: "\25bc";
   font-size: x-small;
   left: 101%;
-  top: 33%;
+  top: 19%;
   position: absolute;
 }
 .headeremail:hover:after {
   content: "\25b2";
   font-size: x-small;
   left: 101%;
-  top: 26%;
+  top: 17%;
   position: absolute;
 }
 .submenu {
@@ -105,6 +106,7 @@ button {
   flex-direction: column;
   position: absolute;
   width: 100%;
+  height: auto !important;
   background-color: gray;
 }
 .submenu button {
@@ -116,15 +118,17 @@ button {
   transform: scale(1.04);
 }
 .num {
-  display: inline-block;
   background-color: #f44336;
   border-radius: 50%;
-  width: 23px;
-  height: 23px;
-  text-align: center;
-  line-height: initial;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  line-height: 1.3;
+  top: 25%;
+  right: -7px;
+  font-size: initial;
 }
-.header a {
+.header div {
   width: 47px;
   height: 30px;
   text-align: center;
@@ -132,12 +136,12 @@ button {
   transition: 0.25s;
   padding: 1.5px;
 }
-.header a:hover {
+.header div:hover {
   background-color: #81c784;
   border-radius: 3px;
 }
-.headeremail:hover {
-  background-color: #81c784;
+.headeremail {
+  width: auto !important;
 }
 .carttopbutton {
   display: flex;
