@@ -20,7 +20,7 @@ const Home = () => {
             <img
               src={item.image}
               alt={item.image}
-              style={{ width: "32vw" }}
+              style={{ maxWidth: "100%" }}
             ></img>
             <p>{item.name}</p>
             <p>{item.price}</p>
