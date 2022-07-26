@@ -106,7 +106,6 @@ button {
   flex-direction: column;
   position: absolute;
   width: 100%;
-  height: auto !important;
   background-color: gray;
 }
 .submenu button {
@@ -128,7 +127,7 @@ button {
   right: -7px;
   font-size: initial;
 }
-.header div {
+.header > div {
   width: 47px;
   height: 30px;
   text-align: center;
@@ -136,7 +135,7 @@ button {
   transition: 0.25s;
   padding: 1.5px;
 }
-.header div:hover {
+.header > div:hover {
   background-color: #81c784;
   border-radius: 3px;
 }
