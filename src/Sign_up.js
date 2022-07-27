@@ -36,7 +36,7 @@ const Sign_up = () => {
         <p>your pass must be between 8-15 character and at least have a number, a capital case and a special character</p>
       )}
       {isclick && valid_pass && !(pass === repass) && <p>pass and repass should be the same</p>}
-      {!!token && !flaglogin && <p>{token}</p>}
+      {isclick && !!token && !flaglogin && <p>{token}</p>}
     </div>
   );
 };
