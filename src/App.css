@@ -168,3 +168,16 @@ button {
   display: flex;
   align-items: center;
 }
+@media (min-width: 596px) {
+  .homeproduct {
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+@media (min-width: 768px) {
+  .homeproduct {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
