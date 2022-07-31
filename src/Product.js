@@ -12,16 +12,15 @@ const Product = () => {
   return (
     <>
       {!!(product)? id === product._id ? (
-        <div style={{display:"flex",flexDirection:"column",alignItems: "center",width: "50vw",margin:"auto"}}>
+        <div className="product">
           <img
             src={product.image}
             alt={product.image}
-            style={{ width: "300px", height: "300px" }}
           ></img>
           <p>name: {product.name}</p>
           <p>brand: {product.brand}</p>
           <p>category: {product.category}</p>
-          <p>description: {product.description}</p>
+          <p id="description">description: {product.description}</p>
           <p>price: {product.price}</p>
           <p>rating: {product.rating}</p>
           <p>numReviews: {product.numReviews}</p>
