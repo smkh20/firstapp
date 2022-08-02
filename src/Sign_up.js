@@ -13,11 +13,11 @@ const Sign_up = () => {
   const token = useSelector((state) => state.login);
   const flaglogin = useSelector((state) => state.flaglogin);
   return (
-    <div style={{ display: "flex", flexDirection: "column", width: "50vw", margin: "auto" }}>
+    <div className="signup" >
       <label>name:</label>
       <input type="text" onChange={(e) => setname(e.target.value)} />
       <label>email:</label>
-      <input type="text" onChange={(e) => setemail(e.target.value)} />
+      <input type="email" onChange={(e) => setemail(e.target.value)} />
       <label>pass:</label>
       <input type="password" onChange={(e) => setpass(e.target.value)} />
       <label>repass:</label>

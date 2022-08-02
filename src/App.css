@@ -191,12 +191,23 @@ button {
 #description {
   display: none;
 }
+.login,
+.signup {
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
+  margin: auto;
+}
 @media (min-width: 596px) {
   .homeproduct {
     grid-template-columns: 1fr 1fr;
     max-width: 100%;
     margin-left: 2px;
     margin-right: 2px;
+  }
+  .login,
+  .signup {
+    max-width: 85%;
   }
 }
 @media (min-width: 768px) {
@@ -209,5 +220,15 @@ button {
   .product img {
     max-width: 50%;
     align-self: center;
+  }
+  .login,
+  .signup {
+    max-width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .login,
+  .signup {
+    max-width: 65%;
   }
 }

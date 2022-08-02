@@ -14,9 +14,9 @@ const Login = () => {
   }, []);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", width: "50vw", margin: "auto" }}>
+    <div className="login">
       <label>email:</label>
-      <input id="email" type="text" onChange={(e) => setemail(e.target.value)} />
+      <input id="email" type="email" onChange={(e) => setemail(e.target.value)} />
       <label>pass:</label>
       <input id="pass" type="password" onChange={(e) => setpass(e.target.value)} />
       <button
