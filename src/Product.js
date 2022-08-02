@@ -40,7 +40,7 @@ const Product = () => {
         </div>
       ) : (
         <p>loding...</p>
-      ):<p>Does not exist</p>}
+      ):<p style={{textAlign:"center"}}>Does not exist</p>}
     </>
   );
 };
